@@ -1,0 +1,42 @@
+/e-commerce
+    /config
+        database.js        # Database connection config
+        paymentConfig.js   # VodaPay API keys and config
+    /controllers
+        authController.js  # Handles authentication (login, signup)
+        productController.js  # Handles product CRUD
+        orderController.js  # Handles order management
+        paymentController.js  # Handles payment processing
+    /models
+        User.js            # User model (MongoDB or SQL)
+        Product.js         # Product model
+        Order.js           # Order model
+        Cart.js            # Cart model
+    /routes
+        authRoute.js      # Routes for authentication
+        productRoute.js   # Routes for product handling
+        orderRoute.js     # Routes for managing orders
+        paymentRoute.js   # Routes for payment and checkout
+        protectedRoute.js
+    /views
+        /partials
+            header.ejs    # Common header across pages
+            footer.ejs    # Common footer across pages
+        index.ejs          # Homepage
+        productDetail.ejs  # Product detail page
+        cart.ejs           # Shopping cart page
+        checkout.ejs       # Checkout page
+        payment-success.ejs  # Payment success page
+        payment-error.ejs    # Payment failure page
+    /public
+        /styles
+            main.css      # Custom styles (or you can use a CSS framework)
+        /scripts
+            app.js        # Frontend JS
+    /middleware
+        authMiddleware.js # Middleware for user authentication
+        cartmiddleware.js
+    .env                    # Environment variables for API keys, DB creds
+    server.js               # Entry point for the app (server configuration)
+    package.json
+    README.md
